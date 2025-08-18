@@ -11,7 +11,7 @@ function Navbar() {
   const topLineRef = useRef(null);
   const bottomLineRef = useRef(null);
 
-  // Timelines for menu animation and burger icon animation
+  // timelines for menu animation and burger icon animation
   const tl = useRef(null);
   const iconTl = useRef(null);
 
@@ -19,7 +19,7 @@ function Navbar() {
   const [showBurger, setShowBurger] = useState(true);
 
   useGSAP(() => {
-    // Timeline for sliding in the navigation menu and revealing links
+    // timeline for sliding in the navigation menu and revealing links
     gsap.set(navRef.current, { xPercent: 100 });
     gsap.set([linksRef.current, contactRef.current], {
       autoAlpha: 0,
@@ -56,7 +56,7 @@ function Navbar() {
         "<+0.2" // start slightly after links
       );
 
-    // Timeline for animating burger icon into "X"
+    // timeline for animating burger icon into "X"
     iconTl.current = gsap
       .timeline({ paused: true })
       .to(topLineRef.current, {
@@ -83,7 +83,7 @@ function Navbar() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // Show burger menu icon if scrolling up or near the top of the page
+      // show burger menu icon if scrolling up or near the top of the page
       setShowBurger(currentScrollY <= lastScrollY || currentScrollY < 10);
       lastScrollY = currentScrollY;
     };
