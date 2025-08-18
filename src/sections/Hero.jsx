@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import AnimatedTextLines from "../components/AnimatedTextLines";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function Hero() {
   const contextRef = useRef(null);
@@ -7,6 +9,27 @@ function Hero() {
   const aboutText = `I build modern, performant websites and front-end interfaces
   Focused on JavaScript and React
   I'm always improving to deliver clean, reliable code`;
+
+  useGSAP(() => {
+    const tl = gsap.timeline();
+
+    tl.from(contextRef.current, {
+      y: "50vh",
+      duration: 1,
+      ease: "circ.out",
+    });
+    // this second animation interacts with the clipPath mask of the header
+    tl.from(
+      headerRef.current,
+      {
+        opacity: 0,
+        y: "200",
+        duration: 1,
+        ease: "circ.out",
+      },
+      "<+0.2"
+    );
+  }, []); // only runs once on mount
 
   return (
     <section id="home" className="flex flex-col justify-end min-h-screen">
