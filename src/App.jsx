@@ -1,5 +1,6 @@
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
+import Skills from "./sections/Skills";
 import SkillSummary from "./sections/SkillSummary";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <SkillSummary />
+      <Skills />
     </div>
   );
 }

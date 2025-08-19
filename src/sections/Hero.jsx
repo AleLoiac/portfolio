@@ -6,7 +6,7 @@ import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 
 function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 853 });
-  const aboutText = `I build modern, performant websites and front-end interfaces
+  const text = `I build modern, performant websites and front-end interfaces
   focused on JavaScript and React
   always improving to deliver clean, reliable code`;
 
@@ -15,7 +15,7 @@ function Hero() {
       <AnimatedHeaderSection
         subTitle={"404 No Bugs Found"}
         title={"Alessandro Loiacono"}
-        text={aboutText}
+        text={text}
         textColor={"text-black"}
       />
       <figure
