@@ -5,7 +5,6 @@ import gsap from "gsap";
 import { Canvas } from "@react-three/fiber";
 import { Planet } from "../components/Planet";
 import { Environment, Float, Lightformer } from "@react-three/drei";
-import { AmbientLight } from "three";
 import { useMediaQuery } from "react-responsive";
 
 function Hero() {
@@ -13,8 +12,8 @@ function Hero() {
   const contextRef = useRef(null);
   const headerRef = useRef(null);
   const aboutText = `I build modern, performant websites and front-end interfaces
-  Focused on JavaScript and React
-  I'm always improving to deliver clean, reliable code`;
+  focused on JavaScript and React
+  always improving to deliver clean, reliable code`;
 
   useGSAP(() => {
     const tl = gsap.timeline();
