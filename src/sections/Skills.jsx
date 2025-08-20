@@ -30,7 +30,7 @@ function Skills() {
   return (
     <section id="skills" className="min-h-screen bg-black rounded-t-4xl">
       <AnimatedHeaderSection
-        subTitle={"Behind the scene, Beyound the screen"}
+        subTitle={"Behind the scene, Beyond the screen"}
         title={"Skills"}
         text={text}
         textColor={"text-white"}
