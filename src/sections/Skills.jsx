@@ -7,7 +7,7 @@ import gsap from "gsap";
 
 function Skills() {
   const text =
-    "I build secure, high-performance full-stack apps with smooth UX to drive growth";
+    "Skilled in problem-solving and collaboration, driven by a strong will to learn and grow";
   const skillRef = useRef([]);
   const isDesktop = useMediaQuery({ minWidth: "48rem" }); // 768px, when reached it will be considered desktop mode for the animation
 
