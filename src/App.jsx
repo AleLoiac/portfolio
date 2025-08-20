@@ -4,6 +4,7 @@ import Navbar from "./sections/Navbar";
 import Skills from "./sections/Skills";
 import SkillSummary from "./sections/SkillSummary";
 import About from "./sections/About";
+import Projects from "./sections/Projects";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <SkillSummary />
       <Skills />
       <About />
+      <Projects />
     </ReactLenis>
   );
 }
