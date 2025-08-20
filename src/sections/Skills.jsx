@@ -59,12 +59,17 @@ function Skills() {
               <div className="flex flex-col gap-2 text-2xl sm:gap:4 lg:text-3xl text-white/80">
                 {skill.items.map((item, itemIndex) => (
                   <div key={`item-${index}-${itemIndex}`}>
-                    <h3 className="flex">
-                      <span className="mr-12 text-lg text-white/30">
-                        0{itemIndex + 1}
-                      </span>
-                      {item.title}
-                    </h3>
+                    <div className="flex flex-col md:flex-row">
+                      <h3 className="flex">
+                        <span className="mr-12 text-lg text-white/30">
+                          0{itemIndex + 1}
+                        </span>
+                        {item.title}
+                      </h3>
+                      <div className="ml-17 md:ml-12  text-xl leading-relaxed tracking-widest lg:text-2xl text-white/60 text-pretty">
+                        {item.description}
+                      </div>
+                    </div>
                     {itemIndex < skill.items.length - 1 && (
                       <div className="w-full h-px my-2 bg-white/30" />
                     )}

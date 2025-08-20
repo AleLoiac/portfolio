@@ -6,15 +6,15 @@ export const skillsData = [
     items: [
       {
         title: "Core Skills",
-        description: "(React, JavaScript, HTML, CSS)",
+        description: "[React, JavaScript, HTML, CSS]",
       },
       {
         title: "Tooling & Workflow",
-        description: "(Git, GitHub, Vite, Webpack)",
+        description: "[Git, GitHub, Vite, Webpack]",
       },
       {
         title: "Testing",
-        description: "(Vitest, Jest)",
+        description: "[Vitest, Jest]",
       },
     ],
   },
@@ -25,15 +25,15 @@ export const skillsData = [
     items: [
       {
         title: "Database Languages",
-        description: "(SQL, PL/SQL)",
+        description: "[SQL, PL/SQL]",
       },
       {
         title: "Migration Software",
-        description: "(ODI)",
+        description: "[ODI]",
       },
       {
         title: "Programming",
-        description: "(Go, basic backend concepts)",
+        description: "[Go, basic backend concepts]",
       },
     ],
   },
@@ -45,7 +45,7 @@ export const skillsData = [
       {
         title: "Strengths",
         description:
-          "(Analytical mindset, detail-oriented, scalable design thinking)",
+          "[Analytical mindset, detail-oriented, scalable design thinking]",
       },
     ],
   },
