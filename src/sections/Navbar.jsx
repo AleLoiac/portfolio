@@ -105,6 +105,13 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const handleNavMobileClick = () => {
+    // only close menu if we're on mobile/tablet
+    if (window.innerWidth < 768 && isOpen) {
+      toggleMenu();
+    }
+  };
+
   return (
     <>
       <nav
@@ -121,6 +128,7 @@ function Navbar() {
                   smooth
                   offset={0}
                   duration={2000}
+                  onClick={handleNavMobileClick}
                 >
                   {section}
                 </Link>
