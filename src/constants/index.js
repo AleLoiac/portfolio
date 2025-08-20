@@ -40,7 +40,7 @@ export const skillsData = [
   {
     title: "Architecture & Problem-Solving",
     description:
-      "My studies and work in architecture and engineering trained me to approach problems with precision and structured thinking. I now apply the same methodical approach to designing scalable code and clean code.",
+      "My studies and work in architecture and engineering trained me to approach problems with precision and structured thinking. I now apply the same methodical approach to designing scalable and clean code.",
     items: [
       {
         title: "Strengths",
