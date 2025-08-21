@@ -78,6 +78,8 @@ function Navbar() {
   }, []);
 
   useEffect(() => {
+    if (isOpen) return;
+
     let lastScrollY = window.scrollY;
 
     const handleScroll = () => {
@@ -92,7 +94,7 @@ function Navbar() {
       passive: true,
     });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isOpen]);
 
   const toggleMenu = () => {
     if (isOpen) {
