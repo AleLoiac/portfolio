@@ -56,7 +56,7 @@ function Skills() {
               <p className="text-xl leading-relaxed tracking-widest lg:text-2xl text-white/60 text-pretty">
                 {skill.description}
               </p>
-              <div className="flex flex-col gap-2 text-2xl sm:gap:4 lg:text-3xl text-white/80">
+              <div className="flex flex-col gap-2 text-2xl sm:gap-4 lg:text-3xl text-white/80">
                 {skill.items.map((item, itemIndex) => (
                   <div key={`item-${index}-${itemIndex}`}>
                     <div className="flex flex-col md:flex-row">
