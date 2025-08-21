@@ -5,6 +5,7 @@ import Skills from "./sections/Skills";
 import SkillSummary from "./sections/SkillSummary";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
+import ContactSummary from "./sections/ContactSummary";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Skills />
       <About />
       <Projects />
+      <ContactSummary />
     </ReactLenis>
   );
 }
