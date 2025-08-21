@@ -51,7 +51,7 @@ export const skillsData = [
   },
 ];
 
-export const exampleProjects = [
+export const projects = [
   {
     id: 1,
     name: "Mobile Accessories E-commerce",
