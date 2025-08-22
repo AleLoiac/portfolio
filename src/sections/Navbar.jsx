@@ -141,29 +141,30 @@ function Navbar() {
         <div
           ref={contactRef}
           className="flex flex-col flex-wrap justify-between gap-8 md:flex-row"
-        ></div>
-        <div className="font-light">
-          <p className="tracking-wider text-white/50">E-mail</p>
-          <p className="text-xl tracking-widest lowercase text-pretty">
-            Alessandroloiac@gmail.com
-          </p>
-        </div>
-        <div className="font-light">
-          <p className="tracking-wider text-white/50">Social Media</p>
-          <div className="flex flex-col flex-wrap md:flex-row gap-x-2">
-            {socials.map((social, index) => (
-              <a
-                key={index}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm leading-loose tracking-widest uppercase hover:text-white transition-colors duration-300"
-              >
-                {"{ "}
-                {social.name}
-                {" }"}
-              </a>
-            ))}
+        >
+          <div className="font-light">
+            <p className="tracking-wider text-white/50">E-mail</p>
+            <p className="text-xl tracking-widest lowercase text-pretty">
+              Alessandroloiac@gmail.com
+            </p>
+          </div>
+          <div className="font-light">
+            <p className="tracking-wider text-white/50">Social Media</p>
+            <div className="flex flex-col flex-wrap md:flex-row gap-x-2">
+              {socials.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm leading-loose tracking-widest uppercase hover:text-white transition-colors duration-300"
+                >
+                  {"{ "}
+                  {social.name}
+                  {" }"}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </nav>
