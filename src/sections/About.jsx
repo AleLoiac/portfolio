@@ -62,7 +62,7 @@ function About() {
         <img
           ref={imgRef}
           src="images/Alessandro.jpg"
-          alt="photo of Alessandro"
+          alt="Alessandro, web developer"
           className="w-md rounded-3xl"
         />
         <AnimatedTextLines text={aboutText} className={"w-full"} />
