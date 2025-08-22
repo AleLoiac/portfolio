@@ -47,9 +47,12 @@ function Contact() {
             <div className="social-link">
               <h2>E-mail</h2>
               <div className="w-full h-px my-2 bg-white/30" />
-              <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">
+              <a
+                href="mailto:Alessandroloiac@gmail.com"
+                className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl"
+              >
                 Alessandroloiac@gmail.com
-              </p>
+              </a>
             </div>
             <div className="social-link">
               <h2>Phone</h2>
@@ -69,6 +72,7 @@ function Contact() {
                     className="text-xs leading-loose tracking-widest uppercase md:text-sm hover:text-white/80 transition-colors duration-200"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`Visit ${social.name}`}
                   >
                     {"{ "}
                     {social.name}
