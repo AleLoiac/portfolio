@@ -54,6 +54,72 @@ export const skillsData = [
 export const projects = [
   {
     id: 1,
+    name: "Knights Travails",
+    description:
+      "JavaScript project that finds the shortest path a knight can take on a standard 8x8 chessboard from a given starting position to a target position.",
+    href: "https://github.com/AleLoiac/knights-travails",
+    image: "/assets/projects/knight_project_image.png",
+    bgImage: "/assets/backgrounds/blanket.jpg",
+    frameworks: [
+      { id: 1, name: "Javascript" },
+      { id: 2, name: "BFS" },
+      { id: 3, name: "Graphs" },
+    ],
+  },
+  {
+    id: 2,
+    name: "Responsive Vanilla Js Homepage",
+    description:
+      "Responsive homepage built with vanilla JavaScript, featuring smooth lightweight transitions and full accessibility.",
+    href: "https://aleloiac.github.io/homepage/",
+    image: "/assets/projects/homepage_project_image.png",
+    bgImage: "/assets/backgrounds/curtains.jpg",
+    frameworks: [
+      { id: 1, name: "Javascript" },
+      { id: 2, name: "Responsive" },
+      { id: 3, name: "Accessibility" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Weather App",
+    description: "Weather forecast site based on the Visual Crossing API.",
+    href: "https://aleloiac.github.io/weather-app/",
+    image: "/assets/projects/weather_app_project_image.png",
+    bgImage: "/assets/backgrounds/map.jpg",
+    frameworks: [
+      { id: 1, name: "Javascript" },
+      { id: 2, name: "APIs" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Tic Tac Toe",
+    description:
+      "Basic Tic Tac Toe game used to learn HTML, CSS and Javascript.",
+    href: "https://aleloiac.github.io/tic-tac-toe/",
+    image: "/assets/projects/tic_tac_toe_project_image.png",
+    bgImage: "/assets/backgrounds/poster.jpg",
+    frameworks: [
+      { id: 1, name: "HTML" },
+      { id: 2, name: "CSS" },
+      { id: 3, name: "Javascript" },
+    ],
+  },
+  {
+    id: 5,
+    name: "Pokémon Memory Game",
+    description: "Memory game built using React, find all the pokémon.",
+    href: "https://memory-game-ten-theta.vercel.app/",
+    image: "/assets/projects/memory_game_project_image.png",
+    bgImage: "/assets/backgrounds/table.jpg",
+    frameworks: [{ id: 1, name: "React" }],
+  },
+];
+
+export const exampleProjects = [
+  {
+    id: 1,
     name: "Mobile Accessories E-commerce",
     description:
       "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
@@ -144,6 +210,7 @@ export const projects = [
     ],
   },
 ];
+
 export const socials = [
   // { name: "Instagram", href: "" },
   {
