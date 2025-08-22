@@ -7,13 +7,7 @@ import gsap from "gsap";
 function Contact() {
   const text = `Got a question?
   I'd love to hear from you and discuss further!`;
-  const items = [
-    "Collaboration",
-    "Collaboration",
-    "Collaboration",
-    "Collaboration",
-    "Collaboration",
-  ];
+  const items = ["Connect", "Connect", "Connect", "Connect", "Connect"];
 
   useGSAP(() => {
     gsap.from(".social-link", {
