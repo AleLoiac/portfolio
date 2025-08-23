@@ -78,7 +78,9 @@ function Contact() {
           </div>
         </div>
       </div>
-      <Marquee items={items} className="text-white bg-transparent " />
+      {window.innerWidth > 768 && (
+        <Marquee items={items} className="text-white bg-transparent " />
+      )}
     </section>
   );
 }
