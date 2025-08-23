@@ -113,7 +113,10 @@ export const projects = [
     href: "https://memory-game-ten-theta.vercel.app/",
     image: "/assets/projects/memory_game_project_image.png",
     bgImage: "/assets/backgrounds/table.jpg",
-    frameworks: [{ id: 1, name: "React" }],
+    frameworks: [
+      { id: 1, name: "React" },
+      { id: 2, name: "APIs" },
+    ],
   },
 ];
 
