@@ -15,7 +15,7 @@ function ContactSummary() {
   ];
 
   useGSAP(() => {
-    if (window.screen > 768) {
+    if (window.innerWidth > 768) {
       gsap.to(containerRef.current, {
         scrollTrigger: {
           trigger: containerRef.current,
