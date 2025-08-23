@@ -215,7 +215,7 @@ export const socials = [
   // { name: "Instagram", href: "" },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/alessandro-loiacono-9bb563238/",
+    href: "https://www.linkedin.com/in/alessandro-loiacono-9bb563238",
   },
   { name: "GitHub", href: "https://github.com/AleLoiac" },
 ];
