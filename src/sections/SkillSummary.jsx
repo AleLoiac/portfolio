@@ -5,10 +5,22 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 function SkillSummary() {
+  let xPercent1 = 20, // move right 20% of elements width
+    xPercent2 = -30,
+    xPercent3 = 100,
+    xPercent4 = -100;
+
+  if (window.innerWidth < 640) {
+    (xPercent1 = 100),
+      (xPercent2 = -250),
+      (xPercent3 = 450),
+      (xPercent4 = -300);
+  }
+
   // use IDs instead of ref to animate
   useGSAP(() => {
     gsap.to("#title-skill-1", {
-      xPercent: 20, // move right 20% of elements width
+      xPercent: xPercent1,
       scrollTrigger: {
         target: "#title-skill-1", // element that triggers the animation when it enters the viewport
         scrub: true, // forward when scrolling down and reverses when scrolling up
@@ -16,7 +28,7 @@ function SkillSummary() {
     });
 
     gsap.to("#title-skill-2", {
-      xPercent: -30,
+      xPercent: xPercent2,
       scrollTrigger: {
         target: "#title-skill-2",
         scrub: true,
@@ -24,7 +36,7 @@ function SkillSummary() {
     });
 
     gsap.to("#title-skill-3", {
-      xPercent: 100,
+      xPercent: xPercent3,
       scrollTrigger: {
         target: "#title-skill-3",
         scrub: true,
@@ -32,7 +44,7 @@ function SkillSummary() {
     });
 
     gsap.to("#title-skill-4", {
-      xPercent: -100,
+      xPercent: xPercent4,
       scrollTrigger: {
         target: "#title-skill-4",
         scrub: true,
