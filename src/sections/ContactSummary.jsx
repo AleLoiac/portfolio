@@ -15,17 +15,19 @@ function ContactSummary() {
   ];
 
   useGSAP(() => {
-    gsap.to(containerRef.current, {
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "center center",
-        end: "+=500 center",
-        scrub: 0.5,
-        pin: true,
-        pinSpacing: true,
-        markers: false,
-      },
-    });
+    if (window.screen > 768) {
+      gsap.to(containerRef.current, {
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "center center",
+          end: "+=500 center",
+          scrub: 0.5,
+          pin: true,
+          pinSpacing: true,
+          markers: false,
+        },
+      });
+    }
   }, []);
 
   return (
