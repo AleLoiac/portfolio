@@ -8,7 +8,7 @@ import gsap from "gsap";
 import { useRef } from "react";
 
 export function Planet(props) {
-  const { nodes, materials } = useGLTF("/models/Planet.glb");
+  const { nodes, materials } = useGLTF("/models/Planet_Draco_compressed.glb");
   const shapeContainer = useRef(null);
   const spheresContainer = useRef(null);
   const ringContainer = useRef(null);
@@ -80,4 +80,4 @@ export function Planet(props) {
   );
 }
 
-useGLTF.preload("/models/Planet.glb");
+useGLTF.preload("/models/Planet_Draco_compressed.glb");
