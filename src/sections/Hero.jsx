@@ -3,12 +3,47 @@ import { Planet } from "../components/Planet";
 import { Environment, Float, Lightformer } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
+import { useEffect, useRef, useState } from "react";
 
 function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 853 });
   const text = `I build modern, performant websites and front-end interfaces
   always improving to deliver clean, reliable code
   focused on JavaScript and React`;
+
+  const [ref, inView] = useInView();
+
+  function useInView() {
+    const ref = useRef();
+    const [inView, setInView] = useState(false);
+
+    useEffect(() => {
+      const currentRef = ref.current;
+
+      if (!currentRef) {
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setInView(entry.isIntersecting);
+        },
+        {
+          root: null, // viewport
+          rootMargin: "0px",
+          threshold: 0.1, // Trigger when 10% of the element is visible
+        }
+      );
+
+      observer.observe(currentRef);
+
+      return () => {
+        observer.unobserve(currentRef);
+      };
+    }, []);
+
+    return [ref, inView];
+  }
 
   return (
     <section id="home" className="flex flex-col justify-end min-h-screen">
@@ -18,13 +53,18 @@ function Hero() {
         text={text}
         textColor={"text-black"}
       />
+      {/* Attaching the ref here. The component will not unmount. */}
       <figure
+        ref={ref}
         className="absolute inset-0 -z-50"
         style={{ width: "100vw", height: "100vh" }}
       >
         <Canvas
           shadows
           camera={{ position: [0, 0, -10], fov: 17.5, near: 1, far: 20 }}
+          // Conditionally set the frameloop.
+          // This stops the render loop when the component is not in view.
+          frameloop={inView ? "always" : "demand"}
         >
           <ambientLight intensity={0.5} />
           <Float speed={0.5}>
