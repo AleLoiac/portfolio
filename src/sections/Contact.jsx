@@ -1,8 +1,8 @@
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { socials } from "../constants";
-import Marquee from "../components/Marquee";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import MarqueeBlock from "../components/MarqueeBlock";
 
 function Contact() {
   const text = `Got a question?
@@ -78,9 +78,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      {window.innerWidth > 768 && (
-        <Marquee items={items} className="text-white bg-transparent " />
-      )}
+      <MarqueeBlock items={items} className="text-white bg-transparent" />
     </section>
   );
 }
