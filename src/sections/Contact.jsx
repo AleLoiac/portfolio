@@ -78,7 +78,9 @@ function Contact() {
           </div>
         </div>
       </div>
-      <MarqueeBlock items={items} className="text-white bg-transparent" />
+      {window.innerWidth > 768 && (
+        <MarqueeBlock items={items} className="text-white bg-transparent" />
+      )}
     </section>
   );
 }
