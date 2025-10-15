@@ -54,6 +54,19 @@ export const skillsData = [
 export const projects = [
   {
     id: 1,
+    name: "Taxi Drink Company Website",
+    description: "",
+    href: "https://taxi-drink.vercel.app/",
+    image: "/assets/projects/taxi_drink_project_image.png",
+    bgImage: "/assets/backgrounds/map.jpg",
+    frameworks: [
+      { id: 1, name: "React" },
+      { id: 2, name: "Tailwind" },
+      { id: 3, name: "Gsap" },
+    ],
+  },
+  {
+    id: 2,
     name: "Parallax Hero Website",
     description: "",
     href: "https://parallax-component.vercel.app/",
@@ -65,7 +78,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "Zentry Gaming",
     description: "",
     href: "https://zentry-gaming-awwwards.vercel.app/",
@@ -78,7 +91,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "Knights Travails",
     description:
       "JavaScript project that finds the shortest path a knight can take on a standard 8x8 chessboard from a given starting position to a target position.",
@@ -92,7 +105,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Responsive Vanilla Js Homepage",
     description:
       "Responsive homepage built with vanilla JavaScript, featuring smooth lightweight transitions and full accessibility.",
@@ -106,7 +119,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: "Weather App",
     description: "Weather forecast site based on the Visual Crossing API.",
     href: "https://aleloiac.github.io/weather-app/",
@@ -118,7 +131,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: "Tic Tac Toe",
     description:
       "Basic Tic Tac Toe game used to learn HTML, CSS and Javascript.",
@@ -132,7 +145,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     name: "Pokémon Memory Game",
     description: "Memory game built using React, find all the pokémon.",
     href: "https://memory-game-ten-theta.vercel.app/",
